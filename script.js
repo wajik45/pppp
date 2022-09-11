@@ -36,10 +36,8 @@ window.onscroll = () => {
 	namaKanan.classList.add('nama-kanan');
 	
 	jj.classList.add('opasiti');
-	jj.classList.add('judul-kiri');
 	kotak.forEach(function(semua) {
 		semua.classList.add('opasiti');
-		semua.classList.add('nama-kanan');
 	});
 
 	judulSatu.classList.add('judul-kiri');
@@ -55,11 +53,9 @@ window.onscroll = () => {
 	} else if (this.scrollY >= 1020 && this.scrollY <= 1500) {
 
 		jj.classList.remove('opasiti');
-		jj.classList.remove('judul-kiri');
 
 		kotak.forEach(function(semua) {
 			semua.classList.remove('opasiti');
-			semua.classList.remove('nama-kanan');
 		});
 
 	} else if (this.scrollY >= 1800 && this.scrollY <= 3000) {
