@@ -61,7 +61,8 @@ nav ul li a:hover {
 	nav {
 		width: 50px;
 		right: 0;
-		border-radius: 7px;
+		border-radius: 7px 0 0 7px;
+		top: 10px;
 	}
 	nav ul {
 		width: 50vw;
@@ -74,6 +75,7 @@ nav ul li a:hover {
 		align-items: center;
 		padding-top: calc(50px + 50px);
 		transform: translateX(100%);
+		border-radius: 20px 0 0 0;
 	}
 	nav ul li {
 		margin-bottom: 30px;
@@ -89,7 +91,7 @@ nav ul li a:hover {
 		align-items: center; 
 		padding-left: 20px; 
 		color: white; 
-		border-radius: 10px;
+		border-radius: 10px 0 0 10px;
 	}
 }
 
@@ -105,8 +107,11 @@ nav .menu {
 	position: relative;
 	background-color: #333;
 }
-nav .menu:hover.menu span{
+nav .menu:active.menu span{
 	background: #ddd;
+}
+nav .menu:hover.menu span{
+	opacity: .8;
 }
 nav span {
 	display: block;
